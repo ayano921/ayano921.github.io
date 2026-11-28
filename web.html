@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>おすすめの職業診断</title>
+  <link rel="stylesheet" href="web.css">
+</head>
+<body>
+  <h1>4択でわかる！あなたの将来の職業診断</h1>
+<div id="firstbox">
+  <h3>あなたのすきは何？</h3>
+  <button type="button" id="firstbox1" onClick=butotnClick();>ゲーム！</button>
+  <button type="button" id="firstbox2" onClick=butotnClick();>ものづくり！</button>
+  <button type="button" id="firstbox3" onClick=butotnClick();>食べること！</button>
+  <button type="button" id="firstbox4" onClick=butotnClick();>運動！</button>
+</div>
+<div id="secondbox">
+  <h3>あなたの得意なことは何？</h3>
+  <button type="button" id="secondbox1" onClick=bototn1Click()>運動！</button>
+  <button type="button" id="secondbox2" onClick=bototn1Click()>勉強！</button>
+  <button type="button" id="secondbox3" onClick=bototn1Click()>歌うこと！</button>
+  <button type="button" id="secondbox4" onClick=bototn1Click()>コミュニケーション</button>
+</div>
+<div id="thirdbox">
+  <h3>人生の中で大事なのは？</h3>
+  <button type="button" id="thirdbox1" onclick=bototn2Click()>楽しく過ごす！</button>
+  <button type="button" id="thirdbox2" onclick=bototn2Click()>食事！</button>
+  <button type="button" id="thirdbox3" onclick=bototn2Click()>家族！</button>
+  <button type="button" id="thirdbox4" onclick=bototn2Click()>お金！</button>
+</div>
+<div id="fourthbox">
+  <h3>もし一生分のお金をもらったらどうする？</h3>
+  <button type="button" id="fourthbox1" onClick=bototn3Click()>世界一周旅行！</button>
+  <button type="button" id="fourthbox2" onClick=bototn3Click()>大豪邸を買う！</button>
+  <button type="button" id="fourthbox3" onClick=bototn3Click()>高級料理を食べる！</button>
+  <button type="button" id="fourthbox4" onClick=bototn3Click()>海賊王になる！</button>
+</div>
+<div id="fifthbox">
+  <h3>あなたの性格は？</h3>
+  <button type="button" id="fifthbox1">優しい！</button>
+  <button type="button" id="fifthbox2">お調子者！</button>
+  <button type="button" id="fifthbox3">マイペース！</button>
+  <button type="button" id="fifthbox4">負けず嫌い！</button>
+</div>
+<div id="hidden-box"></div>
+<script>
+  document.getElementById('secondbox').style.display = "none";
+  document.getElementById('thirdbox').style.display = "none";
+  document.getElementById('fourthbox').style.display = "none";
+  document.getElementById('fifthbox').style.display = "none";
+  document.getElementById('firstbox').style.display = "block";
+  function butotnClick() {
+    document.getElementById('secondbox').style.display = "block";
+    document.getElementById('thirdbox').style.display = "none";
+    document.getElementById('fourthbox').style.display = "none";
+    document.getElementById('fifthbox').style.display = "none";
+    document.getElementById('firstbox').style.display = "none";
+  }
+  function bototn1Click(){
+    document.getElementById('secondbox').style.display = "none";
+    document.getElementById('thirdbox').style.display = "block";
+    document.getElementById('fourthbox').style.display = "none";
+    document.getElementById('fifthbox').style.display = "none";
+    document.getElementById('firstbox').style.display = "none";
+  }
+   function bototn2Click(){
+    document.getElementById('secondbox').style.display = "none";
+    document.getElementById('thirdbox').style.display = "none";
+    document.getElementById('fourthbox').style.display = "block";
+    document.getElementById('fifthbox').style.display = "none";
+    document.getElementById('firstbox').style.display = "none";
+  }
+    function bototn3Click(){
+    document.getElementById('secondbox').style.display = "none";
+    document.getElementById('thirdbox').style.display = "none";
+    document.getElementById('fourthbox').style.display = "none";
+    document.getElementById('fifthbox').style.display = "block";
+    document.getElementById('firstbox').style.display = "none";
+  }
+  
+</script>
+</body>
